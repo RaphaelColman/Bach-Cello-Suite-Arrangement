@@ -88,7 +88,10 @@ soprano =
 	g g, ees g f aes | g bes ees c d b | c8. bes16 aes g | f16 ees' d b c d | \repeatedSemiquaverPatternOverPedal |
 	\repeatedSemiquaverPatternOverPedal | \repeatedSemiquaverPatternOverPedal |
 	\repeatedSemiquaverPatternOverPedal | g,8 a b | c r a | b r d~ |
-	d c c | b
+	d c c | b r4 | r4 f'8 | g b, c | d f16 ees f d | ees8 g, a |
+	b d16 ees d ees | f c b r f'8 | g c b | c16 bes aes g aes f | e8 g e |
+	f16 ees d b c8 | g4.~ | g8 r8 g | a r fis | g r4 | f16 ees ees d d c |
+	c b c ees c d | ees d d c c bes? | c8.
 	
 }
 
@@ -127,8 +130,10 @@ alto =
 	ees c' g | c f, g | g f ees | aes4 f8~ | f16 ees d g a b | c4 b8 |
 	c8 r r8 | r g g | g r r | r f f | f r r | r bes bes | bes r r |
 	r g f | ees4 c8 | c r r | g'16 r r8 r | aes16 r r8 r | fis16 r r8 r |
-	a16 r r8 r | r c, g' | g r f | g d r | ees8. g16 fis8 | g 
-	
+	a16 r r8 r | r c, g' | g r f | g d r | ees8. g16 fis8 | g r g |
+	\subject c | e8 c c'~ | c16 des c bes aes g | f g f d ees c |
+	d8 b4 | c8 s <bes d> | <c d> s d16 c | d c b g b? d | c4 b8 |
+	c r r | s4. | 
 }
 
 tenor = \relative c
@@ -163,7 +168,12 @@ tenor = \relative c
 	g ees, g | c c b | c ees, c | f c'16 bes c a | bes8 d, f | bes, f'16 ees f d |
 	ees8 g bes | ees,16 d c ees g8 | c r r  | aes r r | c4.-+~ |
 	c4.~ |c4.~ |c4. | b16 g f ees f d | ees g c ees, f ees | d f b aes g f |
-	ees f g ees d c | d c' b d r8 | 
+	ees f g ees d c | d c' b d r8 | R4. | r4 c8 | f, d g | g4 fis8 |
+	d b' < f c'> | g8. d'16 c b | c8 aes g | g8 r8 r8 | R4. | r4 g8~ |
+	g16 aes g f ees d | c d c a bes g | fis ees' d c b a | b a g b d f |
+	aes g g f f ees | <g, ees'> d' ees c ees g | c bes bes a a g |
+	%I'm not putting the a in this voice because I can attach it to the alto instead
+	% The bass g for left hand can go in the bass voice but on the tenor stave with \changeStaff
 }
 
 bass =
@@ -201,6 +211,9 @@ bass =
 	\oneQuaverTwoRest a |
 	\oneQuaverTwoRest fis |
 	g4.~ | g4.~ | g4.~ | g4.~ | g8 r r | 
+	R4.*2 | r4 g'8 |c, r c | g4. | g' | ees8 f g | c, f f, |
+	c' e c16 bes | aes8 f' c | b g16 aes g f | ees8 r r | R4.*3 |
+	
 }
 
 keyTime = { \key c \minor \time 3/8 }
