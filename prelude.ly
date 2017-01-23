@@ -2,7 +2,7 @@
 
 \header {
 	title = "Prelude"
-	composer = "Bach, Johanne Sebastian"
+	composer = "Bach, Johann Sebastian"
 	arranger = "arr. Raphael Colman"
 	tagline = "" %Need to set this to an empty string so LilyPond doesn't put in its own tagline
 }
@@ -35,7 +35,7 @@
       >>
       
       \new Staff = "Manual Two"
-       \with  {\override VerticalAxisGroup.staff-staff-spacing.stretchability = 5}
+       %\with  {\override VerticalAxisGroup.staff-staff-spacing.stretchability = 5}
       <<
         \keyTime
         \clef "bass"

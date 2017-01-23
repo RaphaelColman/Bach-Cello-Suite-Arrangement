@@ -90,8 +90,19 @@ soprano =
 	\repeatedSemiquaverPatternOverPedal | g,8 a b | c r a | b r d~ |
 	d c c | b r4 | r4 f'8 | g b, c | d f16 ees f d | ees8 g, a |
 	b d16 ees d ees | f c b r f'8 | g c b | c16 bes aes g aes f | e8 g e |
-	f16 ees d b c8 | g4.~ | g8 r8 g | a r fis | g r4 | f16 ees ees d d c |
-	c b c ees c d | ees d d c c bes? | c8.
+	f16 ees d b c8 | g4.~ | g8 \oneVoice r8 \voiceOne g |
+	a \oneVoice r \voiceOne fis | g r4 | f16 ees ees d d c |
+	c b c ees c d | ees d d c c bes? | c8. e16 fis g |
+	<ees fis a>8 r <ees fis a> | <d g> r r | <g b d> c16 b a g |
+	c8 c c~ | c bes16 aes bes g | ees8 aes aes | g bes ees~ | ees ees d~ |
+	d c g | <des f aes> \oneVoice des'16[( c b c]) | aes( g fis g) ees( d |
+	c ees) des( c b c) | <ees c'>8 r r | \voiceOne ees16 d c d ees f |
+	g8 c b | <g c> e g~ | g16 e f aes bes aes | g f e des' c bes |
+	aes c f aes, bes aes | g bes e des c bes | aes c f d? ees c |
+	r ees d c b a | g g f ees d c | \oneVoice <c g' bes c>8 r r |
+	<f aes c>16 aes g f ees d | <ees a c>8 r4 | r16 ees' d b c g |
+	\voiceOne r ees' d b c g | \oneVoice <c, ees a>8 <ees g c> <d f b> |
+	<c e g c>4. \bar "|."
 	
 }
 
@@ -133,7 +144,11 @@ alto =
 	a16 r r8 r | r c, g' | g r f | g d r | ees8. g16 fis8 | g r g |
 	\subject c | e8 c c'~ | c16 des c bes aes g | f g f d ees c |
 	d8 b4 | c8 s <bes d> | <c d> s d16 c | d c b g b? d | c4 b8 |
-	c r r | s4. | 
+	c r r | s4.*5 | g'8 g aes | g4 d8 | c ees f~ | f ees bes' |
+	a f f | ees g16 f g ees | s4.*4 | c8 r c | c16 d ees f g8 |
+	c, c e | c4 c8~ | c bes e16 g~ | g8 f f~ | f e g~ | g f16 aes g8 |
+	<d f b>16 r16 r8 r8 | c r r | s4.*4 | a'16 fis g d ees b | s4.*2 \bar "|."
+	
 }
 
 tenor = \relative c
@@ -171,9 +186,15 @@ tenor = \relative c
 	ees f g ees d c | d c' b d r8 | R4. | r4 c8 | f, d g | g4 fis8 |
 	d b' < f c'> | g8. d'16 c b | c8 aes g | g8 r8 r8 | R4. | r4 g8~ |
 	g16 aes g f ees d | c d c a bes g | fis ees' d c b a | b a g b d f |
-	aes g g f f ees | <g, ees'> d' ees c ees g | c bes bes a a g |
-	%I'm not putting the a in this voice because I can attach it to the alto instead
-	% The bass g for left hand can go in the bass voice but on the tenor stave with \changeStaff
+	aes g g f f ees | \voiceOne ees d ees c ees g | c bes bes a a g |
+	<fis a> e f g a bes | c d32 ees d16 c c b | b d b g d g, |
+	\oneVoice <d' g>8 r <d g b> | c' ees d | d4 g,8 | ees c' bes |
+	bes4 bes8 | f c' g | g c c | <des, aes'> r r | R4.*2 |
+	a'16 g a b c d | g,8 r c,16 d | ees8 g16 aes g f |
+	<e g>8 bes'16 aes bes g | aes8 c, d | e8 g16 f g e |
+	f8 aes des16 c | bes aes g f e c' | f,8 aes16 <f b> <ees c'>8 |
+	<f b>16 r r8 r | R4. | g8 r r | R4. | <a c>8 r4 | R4.*2 |
+	r8 c g | g4. \bar "|."
 }
 
 bass =
@@ -213,51 +234,68 @@ bass =
 	g4.~ | g4.~ | g4.~ | g4.~ | g8 r r | 
 	R4.*2 | r4 g'8 |c, r c | g4. | g' | ees8 f g | c, f f, |
 	c' e c16 bes | aes8 f' c | b g16 aes g f | ees8 r r | R4.*3 |
+	\change Staff = "Manual Two" \voiceTwo
+	\oneQuaverTwoRest g |
+	\oneQuaverTwoRest g |
+	\oneQuaverTwoRest g |
+	\oneQuaverTwoRest g'|
+	\oneQuaverTwoRest g |
+	\change Staff = "Pedal" \oneVoice f,8 r f |
+	ees ees f | g g16 f g ees | aes8 c, d | ees g16 f g ees |
+	f8 a b | c ees16 d ees c | f,8 r4 |
+	R4.*2 |
+	\oneQuaverTwoRest fis |
+	\oneQuaverTwoRest g | r8 r g | c,4.~ | c4.~ | c4.~ | c4.~ | c4.~ | c4. |
+	\oneQuaverTwoRest d |
+	\oneQuaverTwoRest ees |
+	\oneQuaverTwoRest e |
+	\oneQuaverTwoRest f |
+	fis8 r4 | g4.~ | g4. | g'16 fis g8 g, | c4. \bar "|."
 	
 }
 
-keyTime = { \key c \minor \time 3/8 }
-\score
-{
-  <<
-    \new PianoStaff
-    <<
-      \new Staff = "Manual One"
-      <<
-      	\keyTime
-        \clef "treble"
-        \new Voice
-        {
-          \voiceOne
-          \soprano
-        }
-        \new Voice
-        {
-          \voiceTwo
-          \oneVoice \alto
-        }
-      >>
-      
-      \new Staff = "Manual Two"
-       \with  {\override VerticalAxisGroup.staff-staff-spacing.stretchability = 5}
-      <<
-      	\keyTime
-        \clef "bass"
-        \new Voice
-        {
-          \tenor
-        }
-      >>
-    >>
-    
-    \new Staff = "Pedal"
-    <<
-    	\keyTime
-      \clef "bass"
-      \new Voice
-      {
-        \bass
-      }
-    >>
-  >>
-}
+%keyTime = { \key c \minor \time 3/8 }
+%\score
+%{
+%  <<
+%    \new PianoStaff
+%    <<
+%      \new Staff = "Manual One"
+%      <<
+%      	\keyTime
+%        \clef "treble"
+%        \new Voice
+%        {
+%          \voiceOne
+%          \soprano
+%        }
+%        \new Voice
+%        {
+%          \voiceTwo
+%          \oneVoice \alto
+%        }
+%      >>
+%      
+%      \new Staff = "Manual Two"
+%       \with  {\override VerticalAxisGroup.staff-staff-spacing.stretchability = 5}
+%      <<
+%      	\keyTime
+%        \clef "bass"
+%        \new Voice
+%        {
+%          \tenor
+%        }
+%      >>
+%    >>
+%    
+%    \new Staff = "Pedal"
+%    <<
+%    	\keyTime
+%      \clef "bass"
+%      \new Voice
+%      {
+%        \bass
+%      }
+%    >>
+%  >>
+%}
