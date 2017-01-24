@@ -90,7 +90,7 @@ soprano =
 	\repeatedSemiquaverPatternOverPedal | g,8 a b | c r a | b r d~ |
 	d c c | b r4 | r4 f'8 | g b, c | d f16 ees f d | ees8 g, a |
 	b d16 ees d ees | f c b r f'8 | g c b | c16 bes aes g aes f | e8 g e |
-	f16 ees d b c8 | g4.~ | g8 \oneVoice r8 \voiceOne g |
+	f16 ees? d b c8 | g4.~ | g8 \oneVoice r8 \voiceOne g |
 	a \oneVoice r \voiceOne fis | g r4 | f16 ees ees d d c |
 	c b c ees c d | ees d d c c bes? | c8. e16 fis g |
 	<ees fis a>8 r <ees fis a> | <d g> r r | <g b d> c16 b a g |
@@ -186,8 +186,10 @@ tenor = \relative c
 	ees f g ees d c | d c' b d r8 | R4. | r4 c8 | f, d g | g4 fis8 |
 	d b' < f c'> | g8. d'16 c b | c8 aes g | g8 r8 r8 | R4. | r4 g8~ |
 	g16 aes g f ees d | c d c a bes g | fis ees' d c b a | b a g b d f |
-	aes g g f f ees | \voiceOne ees d ees c ees g | c bes bes a a g |
-	<fis a> e f g a bes | c d32 ees d16 c c b | b d b g d g, |
+	aes g g f f ees |
+	<< \new Voice {\voiceOne ees d ees c ees g | c bes bes a a g |
+	<fis a> e f g a bes | c d32 ees d16 c c b | b d b g d g,}
+	\new Voice {\voiceTwo g8 r r | g r r | g r r | g r r | g r r}>>|
 	\oneVoice <d' g>8 r <d g b> | c' ees d | d4 g,8 | ees c' bes |
 	bes4 bes8 | f c' g | g c c | <des, aes'> r r | R4.*2 |
 	a'16 g a b c d | g,8 r c,16 d | ees8 g16 aes g f |
@@ -233,14 +235,8 @@ bass =
 	\oneQuaverTwoRest fis |
 	g4.~ | g4.~ | g4.~ | g4.~ | g8 r r | 
 	R4.*2 | r4 g'8 |c, r c | g4. | g' | ees8 f g | c, f f, |
-	c' e c16 bes | aes8 f' c | b g16 aes g f | ees8 r r | R4.*3 |
-	\change Staff = "Manual Two" \voiceTwo
-	\oneQuaverTwoRest g |
-	\oneQuaverTwoRest g |
-	\oneQuaverTwoRest g |
-	\oneQuaverTwoRest g'|
-	\oneQuaverTwoRest g |
-	\change Staff = "Pedal" \oneVoice f,8 r f |
+	c' e c16 bes | aes8 f' c | b g16 aes g f | ees8 r r | R4.*8 |
+	f8 r f |
 	ees ees f | g g16 f g ees | aes8 c, d | ees g16 f g ees |
 	f8 a b | c ees16 d ees c | f,8 r4 |
 	R4.*2 |
