@@ -89,12 +89,12 @@ soprano =
 	\repeatedSemiquaverPatternOverPedal | \repeatedSemiquaverPatternOverPedal |
 	\repeatedSemiquaverPatternOverPedal | g,8 a b | c r a | b r d~ |
 	d c c | b r4 | r4 f'8 | g b, c | d f16 ees f d | ees8 g, a |
-	b d16 ees d ees | f c b r f'8 | g c b | c16 bes aes g aes f | e8 g e |
+	b d16 ees d ees | f c b r f'8 | g c b | c16 bes? aes g aes f | e8 g e |
 	f16 ees? d b c8 | g4.~ | g8 \oneVoice r8 \voiceOne g |
 	a \oneVoice r \voiceOne fis | g r4 | f16 ees ees d d c |
 	c b c ees c d | ees d d c c bes? | c8. e16 fis g |
 	<ees fis a>8 r <ees fis a> | <d g> r r | <g b d> c16 b a g |
-	c8 c c~ | c bes16 aes bes g | ees8 aes aes | g bes ees~ | ees ees d~ |
+	c8 c c~ | c16 ees d c bes8~ | bes aes aes | g bes ees~ | ees ees d~ |
 	d c g | <des f aes> \oneVoice des'16[( c b c]) | aes( g fis g) ees( d |
 	c ees) des( c b c) | <ees c'>8 r r | \voiceOne ees16 d c d ees f |
 	g8 c b | <g c> e g~ | g16 e f aes bes aes | g f e des' c bes |
@@ -138,10 +138,10 @@ alto =
 	s4.*7 | s4 f8 | bes,4. | d4 c16 ees | d8 ees f | g16 f ees g f aes |
 	g4.~ | g8. bes16 aes g | f4. | d16 c' b a g c | b c d b d b |
 	g8 d16 b d b | g' aes g f ees d | c d ees g c bes | aes8 r f |
-	ees c' g | c f, g | g f ees | aes4 f8~ | f16 ees d g a b | c4 b8 |
+	ees c' g | c f, f | g f ees | aes4 f8~ | f16 ees d g a b | c4 b8 |
 	c8 r r8 | r g g | g r r | r f f | f r r | r bes bes | bes r r |
 	r g f | ees4 c8 | c r r | g'16 r r8 r | aes16 r r8 r | fis16 r r8 r |
-	a16 r r8 r | r c, g' | g r f | g d r | ees8. g16 fis8 | g r g |
+	a16 r r8 r | r c, g' | g r f | g d r | g4 fis8 | g r g |
 	\subject c | e8 c c'~ | c16 des c bes aes g | f g f d ees c |
 	d8 b4 | c8 s <bes d> | <c d> s d16 c | d c b g b? d | c4 b8 |
 	c r r | s4.*5 | g'8 g aes | g4 d8 | c ees f~ | f ees bes' |
@@ -178,8 +178,8 @@ tenor = \relative c
 	d8 f16 d f d | bes16 aes' fes d fes d | bes  c' bes aes g f |
 	ees8 g, bes | ees, ees'16 c ees c | aes g' ees c ees c |
 	aes bes' aes g f ees | f ees d c b a | g8 r g' | b16 a g4~ |
-	g16 f' ees d c b | c8 r e | c16 bes aes c c b | c8 c16 d ees8~ |
-	ees16 d c ees d8 | c8 g c~ | c8. c16 b c | d8 r g | g aes g |
+	g16 f' ees d c b | c8 r e16 g~ | g e f c c b | c b c d ees8~ |
+	ees16 d c8 d | g,4 c8 | c8. c16 b c | d8 r g | g aes g |
 	g ees, g | c c b | c ees, c | f c'16 bes c a | bes8 d, f | bes, f'16 ees f d |
 	ees8 g bes | ees,16 d c ees g8 | c r r  | aes r r | c4.-+~ |
 	c4.~ |c4.~ |c4. | b16 g f ees f d | ees g c ees, f ees | d f b aes g f |
@@ -189,8 +189,8 @@ tenor = \relative c
 	aes g g f f ees |
 	<< \new Voice {\voiceOne ees d ees c ees g | c bes bes a a g |
 	<fis a> e f g a bes | c d32 ees d16 c c b | b d b g d g,}
-	\new Voice {\voiceTwo g8 r r | g r r | g r r | g r r | g r r}>>|
-	\oneVoice <d' g>8 r <d g b> | c' ees d | d4 g,8 | ees c' bes |
+	\new Voice {\voiceTwo g8 r r | g r r | g r r | g' r r | g, r r}>>|
+	\oneVoice <d' g>8 r <d g b> | c' ees d | d8 g,4 | ees8 c' bes |
 	bes4 bes8 | f c' g | g c c | <des, aes'> r r | R4.*2 |
 	a'16 g a b c d | g,8 r c,16 d | ees8 g16 aes g f |
 	<e g>8 bes'16 aes bes g | aes8 c, d | e8 g16 f g e |
@@ -225,7 +225,7 @@ bass =
 	g r c | f, r8 r8 |
 	\oneQuaverTwoRest bes | bes r c16 bes | aes8 bes c | \oneQuaverTwoRest f |
 	R4.*8 | g,4.~ | g4. | r8 g' g, | c r c' | f,8. ees16 f g | c,8 ees c |
-	a f'4 | ees8 b c | f4 d8 | g8. aes16 g f | ees8 f g | c, r r |
+	a f' d | ees8 b c | f4 d8 | g8. aes16 g f | ees8 f g | c, r r |
 	r ees g | \oneQuaverTwoRest c, | r a' f | \oneQuaverTwoRest bes |
 	r d, bes | \oneQuaverTwoRest ees | r ees, g | aes16 bes aes g f ees |
 	\oneQuaverTwoRest d |
@@ -237,7 +237,7 @@ bass =
 	R4.*2 | r4 g'8 |c, r c | g4. | g' | ees8 f g | c, f f, |
 	c' e c16 bes | aes8 f' c | b g16 aes g f | ees8 r r | R4.*8 |
 	f8 r f |
-	ees ees f | g g16 f g ees | aes8 c, d | ees g16 f g ees |
+	ees ees f | g bes16 aes bes g | aes8 c, d | ees g16 f g ees |
 	f8 a b | c ees16 d ees c | f,8 r4 |
 	R4.*2 |
 	\oneQuaverTwoRest fis |
