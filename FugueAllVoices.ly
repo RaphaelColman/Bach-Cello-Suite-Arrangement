@@ -72,8 +72,8 @@ soprano =
 	c8 bes g'~ | g f b, | c r ees | ees4 d16 c | bes4 bes8 | ees4 d8 |
 	ees8 g,16 f g ees | bes'4.~ | bes8 aes16 g aes f |
 	c'4.~ | c8 bes16 aes bes g | ees'4.~| ees8 d4~ | d8 c4~| c8 b4 |
-	c8 c bes~ | bes ees bes | a c g~| g8 c4 | c8. b16 c ees |
-	d c b d ees f | g8 c, b | c8 r4 | s4.*5 |
+	c16 d ees8 f~ | f ees bes | a16 b c8 d~| d c8 r8 | r4 c8 |
+	g16 a b c a b | g8 c b | c8 r4 | s4.*5 |
 	r4 bes8 | \subject g | bes16 a bes c d8 | d4 fis,8 | g4 d8 |
 	c d e | f4 c8 | d d16 ees d ees | f g f g aes f | b f d' aes g f |
 	ees f d ees f d | ees8 g f~ | f16 ees d ees f d | e8 c aes' |
@@ -124,9 +124,9 @@ alto =
 	ees g16 f g ees | f g aes bes c8 | d, bes16 aes' g f |
 	g aes f g aes f | g8 r4 | r8 f16 aes g e | c g' f8 r8 |
 	r8 g16 bes aes f | d aes' g8 r8 | r8 bes16 g16 c aes |
-	f g aes f bes g | ees f g ees f d | d f g f ees d | c d ees8 f~ |
-	f8 ees4~ | ees8 d4~ | d8 c8 r8 | r16 f ees d ees f | g8. b16 c d |
-	c8 r d, | c r ees16 g | d f bes e, f aes | g4.~^+ | g8 c16 bes c a |
+	f g aes f bes g | ees f g ees f d | d f g f ees d | c8 aes'16 g aes f |
+	g aes bes aes bes g~ | g8 f16 ees f d | ees f g f g ees | f g aes g f ees | f4 g8 |
+	g f d | c r ees16 g | d f bes e, f aes | g4.~^+ | g8 c16 bes c a |
 	a4.^+ | aes?16 bes c bes c aes | g aes g f g f | ees d c8 f |
 	f16 g f ees d8 | e4 d8 | d4 g8 | g4. | c,8 d fis | g4 fis8 |
 	g8. a16 bes g | a4 d,8~ | d8 bes4~ | bes4 c8~ | c8 aes4~ | 
@@ -164,23 +164,23 @@ tenor = \relative c
 	f16 g aes g f g | c8 bes4 | c aes8~ | aes16 g f c' bes aes |
 	bes8 c bes | bes8 r8 ees, | d d e | f4 f,8 | r8 ees' f | g4 g,8 |
 	r8 g' aes16 f | bes8 f8 g16 ees | aes8 ees f16 d | g4 r8 |
-	r8 aes4 | g16 aes bes aes bes g | f8 f4 | ees16 f g f g ees |
-	f8 aes4 | g4 r8 | g8 f8. g16 | a16 c f b, c ees |
+	r8 c bes | bes r ees | c r g | g r c |
+	c4 d16 c | d4 d8 | c d g, | a16 c f b, c ees |
 	bes8 r8 aes16 f | f g f ees f d | ees4.~-+ |
 	ees16 f ees d ees c | d4.-+ | ees16 f ees d ees d |
-	c8 ees16 d ees c | d8 a bes | bes8 c16 bes c a | bes8 fis' g |
+	c8 ees16 d ees c | d8 a' bes | bes8 c16 bes c a | bes8 fis g |
 	ees c c'16 bes | a g fis e d c | bes8 c d | g,4 g'8 |
 	fis c16 bes c a | bes d g e f d | e c bes aes bes g |
 	aes c f d ees c | b g' f8 ees | d8. ees16 d8 | \voiceTwo g, r16 g'16 a b |
 	c8 f, g | c, r g' | c f, g | c, f4~ | f16 d e f g e | f4 \oneVoice e8 |
 	f aes f | e16 c d e f d | e f g aes bes g | aes g aes bes c d |
-	e8 r4 | R4. | r4 c8 | \subject f, | aes16 b aes g f ees |
-	d8 f16 d f d | bes16 aes' fes d fes d | bes  c' bes aes g f |
+	e8 r4 | R4. | r4 c8 | \subject f, | aes16 bes aes g f ees |
+	d8 f16 d f d | bes16 aes' f d f d | bes  c' bes aes g f |
 	ees8 g, bes | ees, ees'16 c ees c | aes g' ees c ees c |
 	aes bes' aes g f ees | f ees d c b a | g8 r g' | b16 a g4~ |
 	g16 f' ees d c b | c8 r e16 g~ | g e f c c b | c b c d ees8~ |
 	ees16 d c8 d | g,4 c8 | c8. c16 b c | d8 r g | g aes g |
-	g ees, g | c c b | c ees, c | f c'16 bes c a | bes8 d, f | bes, f'16 ees f d |
+	g ees g | c c b | c ees c | f, c'16 bes c a | bes8 d, f | bes, f'16 ees f d |
 	ees8 g bes | ees,16 d c ees g8 | c r r  | aes r r | c4.-+~ |
 	c4.~ |c4.~ |c4. | b16 g f ees f d | ees g c ees, f ees | d f b aes g f |
 	ees f g ees d c | d c' b d r8 | R4. | r4 c8 | f, d g | g4 fis8 |
