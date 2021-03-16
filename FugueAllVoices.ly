@@ -180,7 +180,7 @@ tenor = \relative c
 	aes bes' aes g f ees | f ees d c b a | g8 r g' | b16 a g4~ |
 	g16 f' ees d c b | c8 r e16 g~ | g e f c c b | c b c d ees8~ |
 	ees16 d c8 d | g,4 c8 | c8. c16 b c | d8 r g | g aes g |
-	g ees g | c c b | c ees c | f, c'16 bes c a | bes8 d, f | bes, f'16 ees f d |
+	g ees g | c, c b | c ees c | f, c'16 bes c a | bes8 d, f | bes, f'16 ees f d |
 	ees8 g bes | ees,16 d c ees g8 | c r r  | aes r r | c4.-+~ |
 	c4.~ |c4.~ |c4. | b16 g f ees f d | ees g c ees, f ees | d f b aes g f |
 	ees f g ees d c | d c' b d r8 | R4. | r4 c8 | f, d g | g4 fis8 |
